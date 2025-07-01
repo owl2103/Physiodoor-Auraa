@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhysioDoor - Expert Physiotherapy at Your Doorstep</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <!-- Animated Background Balls -->
+    <div class="background-balls">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float" onclick="openWhatsApp()">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">Chat with us</span>
+    </div>
+
+    <!-- Emergency Contact Float -->
+    <div class="emergency-float" onclick="callEmergency()">
+        <i class="fas fa-phone-alt"></i>
+        <span class="emergency-text">Emergency</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-container">
+                    <img src="logo.png" alt="PhysioDoor Logo" class="logo-img">
+                    <span class="logo-text">PhysioDoor</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn btn-primary" onclick="showSection('booking')">
+                    <i class="fas fa-calendar-plus"></i> Book Now
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- Badge -->
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>#1 Home Physiotherapy in Pune</span>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <!-- Main Content -->
+                <div class="hero-main">
+                    <div class="hero-left">
+                        <h1 class="hero-title">Professional Physiotherapy at Home</h1>
+                        
+                        <p class="hero-description">
+                            Experience expert care and personalized treatment without leaving the comfort of your home.
+                        </p>
+
+                        <!-- Action Buttons -->
+                        <div class="hero-actions">
+                            <button class="btn btn-primary btn-large" onclick="showSection('booking')">
+                                <i class="fas fa-calendar-plus"></i>
+                                Book Appointment
+                            </button>
+                            <button class="btn btn-outline btn-large" onclick="showSection('contact')">
+                                <i class="fas fa-phone"></i>
+                                Contact Us
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="hero-right">
+                        <!-- Certified Expert Badge -->
+                        <div class="expert-badge">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certified Expert</span>
+                        </div>
+
+                        <!-- Logo Circle -->
+                        <div class="logo-circle">
+                            <div class="circle-glow"></div>
+                            <div class="logo-container-large">
+                                <img src="logo.png" alt="PhysioDoor" class="hero-logo">
+                                <span class="logo-text-large">PhysioDoor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature Cards -->
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Convenient Home Visits</h3>
+                        <p>Professional physiotherapy services delivered to your doorstep across Pune and surrounding areas.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Flexible Scheduling</h3>
+                        <p>Book appointments at your convenience with same-day availability and flexible timing options.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>Certified Professionals</h3>
+                        <p>All our physiotherapists are certified with specialized training and years of experience.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Quality Assurance</h3>
+                        <p>Strict quality standards, verified reviews, and continuous monitoring ensure excellent care.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h3>Personalized Care</h3>
+                        <p>Customized treatment plans designed specifically for your condition, age, and recovery goals.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>Round-the-clock customer support and emergency consultation services for urgent needs.</p>
+                    </div>
+                </div>
+
+                <!-- Stats Section -->
+                <div class="stats-section">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-plus">+</span>
+                        </div>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number" data-target="500">0</span>
+                            <span class="stat-plus">+</span>
+                        </div>
+                        <span class="stat-label">Happy Patients</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number" data-target="5">0</span>
+                        </div>
+                        <span class="stat-label">Star Expert</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number" data-target="98">0</span>
+                            <span class="stat-plus">%</span>
+                        </div>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">Complete Range of Services</h2>
+            <p class="section-description">Comprehensive physiotherapy solutions for all your health needs</p>
+            
+            <div class="services-filter">
+                <button class="filter-btn active" data-filter="all">All Services</button>
+                <button class="filter-btn" data-filter="pain">Pain Management</button>
+                <button class="filter-btn" data-filter="rehab">Rehabilitation</button>
+                <button class="filter-btn" data-filter="specialty">Specialty Care</button>
+                <button class="filter-btn" data-filter="packages">Treatment Packages</button>
+            </div>
+            
+            <div class="services-full-grid">
+                <div class="service-full-card" data-category="pain">
+                    <div class="service-icon">
+                        <i class="fas fa-user-injured"></i>
+                    </div>
+                    <h3>Back Pain Therapy</h3>
+                    <p>Specialized treatment for chronic back pain, herniated discs, and spinal alignment issues using advanced techniques and personalized exercise programs.</p>
+                    <div class="service-details">
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>45-60 mins</span>
+                        </div>
+                        <div class="service-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹800-1000</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="bookService('back-pain')">Book Now</button>
+                </div>
+
+                <div class="service-full-card" data-category="specialty">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Neurological Rehab</h3>
+                    <p>Expert care for stroke recovery, Parkinson's disease, SCI (cervical, thoracic, lumbar level), and other neurological conditions with proven rehabilitation techniques.</p>
+                    <div class="service-details">
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>60-90 mins</span>
+                        </div>
+                        <div class="service-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹800-1000</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="bookService('neurological')">Book Now</button>
+                </div>
+
+                <div class="service-full-card" data-category="rehab">
+                    <div class="service-icon">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <h3>Orthopedic Care</h3>
+                    <p>Comprehensive treatment for neck pain, back pain, shoulder pain, knee pain, arthritis, fracture recovery, and mobility enhancement programs.</p>
+                    <div class="service-details">
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>45-60 mins</span>
+                        </div>
+                        <div class="service-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹1000-1200</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="bookService('orthopedic')">Book Now</button>
+                </div>
+
+                <div class="service-full-card" data-category="specialty">
+                    <div class="service-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Sports Rehabilitation</h3>
+                    <p>Professional treatment for ankle sprain, ACL injury, tennis elbow, and other sports injuries. Performance enhancement programs for athletes and active individuals.</p>
+                    <div class="service-details">
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>60-75 mins</span>
+                        </div>
+                        <div class="service-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹800-1000</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="bookService('sports')">Book Now</button>
+                </div>
+
+                <div class="service-full-card" data-category="rehab">
+                    <div class="service-icon">
+                        <i class="fas fa-procedures"></i>
+                    </div>
+                    <h3>Post-Surgery Rehab</h3>
+                    <p>Specialized rehabilitation after orthopedic surgeries, joint replacements, and other surgical procedures to ensure optimal recovery and mobility restoration.</p>
+                    <div class="service-details">
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>60-90 mins</span>
+                        </div>
+                        <div class="service-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹1000-1200</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="bookService('post-surgery')">Book Now</button>
+                </div>
+
+                <div class="service-full-card" data-category="specialty">
+                    <div class="service-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Pediatric Physio</h3>
+                    <p>Gentle, specialized care for children's developmental delays, cerebral palsy, and mobility challenges.</p>
+                    <div class="service-details">
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>30-45 mins</span>
+                        </div>
+                        <div class="service-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹800-1000</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="bookService('pediatric')">Book Now</button>
+                </div>
+
+                <div class="service-full-card" data-category="specialty">
+                    <div class="service-icon">
+                        <i class="fas fa-lungs"></i>
+                    </div>
+                    <h3>Respiratory Therapy</h3>
+                    <p>Breathing exercises and chest physiotherapy for COPD, asthma, and post-COVID respiratory recovery.</p>
+                    <div class="service-details">
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>45-60 mins</span>
+                        </div>
+                        <div class="service-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹800-1000</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="bookService('respiratory')">Book Now</button>
+                </div>
+
+                <!-- Treatment Packages -->
+                <div class="service-full-card" data-category="packages">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-week"></i>
+                    </div>
+                    <h3>Weekly Package</h3>
+                    <p>Perfect for short-term recovery needs. Includes 6 comprehensive physiotherapy sessions with personalized treatment plans and progress monitoring.</p>
+                    <div class="service-details">
+                        <div class="service-duration">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>6 Sessions</span>
+                        </div>
+                        <div class="service-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹4,499</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="bookPackage('weekly')">Book Package</button>
+                </div>
+
+                <div class="service-full-card" data-category="packages">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Monthly Package</h3>
+                    <p>Comprehensive long-term care solution. Includes 26 sessions with weekly progress reviews, custom exercise programs, and 24/7 support.</p>
+                    <div class="service-details">
+                        <div class="service-duration">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>26 Sessions</span>
+                        </div>
+                        <div class="service-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹19,999</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="bookPackage('monthly')">Book Package</button>
+                </div>
+            </div>
+
+            <!-- Interactive Service Areas Map -->
+            <div class="service-areas-map">
+                <div class="map-header">
+                    <h3>Service Areas in Pune</h3>
+                    <p>We provide home physiotherapy services across all major areas in Pune</p>
+                    <div class="map-controls">
+                        <button class="map-control-btn active" onclick="showAllAreas()">
+                            <i class="fas fa-map"></i> All Areas
+                        </button>
+                        <button class="map-control-btn" onclick="showNearbyAreas()">
+                            <i class="fas fa-location-arrow"></i> Find Nearby
+                        </button>
+                        <button class="map-control-btn" onclick="showPopularAreas()">
+                            <i class="fas fa-star"></i> Popular Areas
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="advanced-map-container">
+                    <div class="map-legend">
+                        <div class="legend-item">
+                            <div class="legend-color available"></div>
+                            <span>Available Areas</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color popular"></div>
+                            <span>Popular Areas</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color premium"></div>
+                            <span>Premium Areas</span>
+                        </div>
+                    </div>
+                    
+                    <div class="interactive-map">
+                        <div class="map-background">
+                            <div class="map-grid"></div>
+                            <div class="map-roads"></div>
+                        </div>
+                        
+                        <!-- Enhanced Map Pins with Categories -->
+                        <div class="map-pin premium pin-koregaon" data-area="Koregaon Park" data-type="premium" onclick="showAdvancedAreaInfo('Koregaon Park', 'premium')">
+                            <div class="pin-pulse"></div>
+                            <div class="pin-icon"><i class="fas fa-crown"></i></div>
+                            <div class="map-tooltip">
+                                <h4>Koregaon Park</h4>
+                                <p>Premium residential area</p>
+                                <div class="tooltip-stats">
+                                    <span><i class="fas fa-users"></i> 150+ patients</span>
+                                    <span><i class="fas fa-star"></i> 4.9/5 rating</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="map-pin popular pin-viman" data-area="Viman Nagar" data-type="popular" onclick="showAdvancedAreaInfo('Viman Nagar', 'popular')">
+                            <div class="pin-pulse"></div>
+                            <div class="pin-icon"><i class="fas fa-building"></i></div>
+                            <div class="map-tooltip">
+                                <h4>Viman Nagar</h4>
+                                <p>IT hub and residential zone</p>
+                                <div class="tooltip-stats">
+                                    <span><i class="fas fa-users"></i> 200+ patients</span>
+                                    <span><i class="fas fa-star"></i> 4.8/5 rating</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="map-pin popular pin-kharadi" data-area="Kharadi" data-type="popular" onclick="showAdvancedAreaInfo('Kharadi', 'popular')">
+                            <div class="pin-pulse"></div>
+                            <div class="pin-icon"><i class="fas fa-laptop"></i></div>
+                            <div class="map-tooltip">
+                                <h4>Kharadi</h4>
+                                <p>Emerging IT corridor</p>
+                                <div class="tooltip-stats">
+                                    <span><i class="fas fa-users"></i> 180+ patients</span>
+                                    <span><i class="fas fa-star"></i> 4.7/5 rating</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="map-pin available pin-hadapsar" data-area="Hadapsar" data-type="available" onclick="showAdvancedAreaInfo('Hadapsar', 'available')">
+                            <div class="pin-pulse"></div>
+                            <div class="pin-icon"><i class="fas fa-industry"></i></div>
+                            <div class="map-tooltip">
+                                <h4>Hadapsar</h4>
+                                <p>Industrial and residential</p>
+                                <div class="tooltip-stats">
+                                    <span><i class="fas fa-users"></i> 120+ patients</span>
+                                    <span><i class="fas fa-star"></i> 4.6/5 rating</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="map-pin popular pin-baner" data-area="Baner" data-type="popular" onclick="showAdvancedAreaInfo('Baner', 'popular')">
+                            <div class="pin-pulse"></div>
+                            <div class="pin-icon"><i class="fas fa-home"></i></div>
+                            <div class="map-tooltip">
+                                <h4>Baner</h4>
+                                <p>Tech and residential hub</p>
+                                <div class="tooltip-stats">
+                                    <span><i class="fas fa-users"></i> 190+ patients</span>
+                                    <span><i class="fas fa-star"></i> 4.8/5 rating</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="map-pin available pin-wakad" data-area="Wakad" data-type="available" onclick="showAdvancedAreaInfo('Wakad', 'available')">
+                            <div class="pin-pulse"></div>
+                            <div class="pin-icon"><i class="fas fa-tree"></i></div>
+                            <div class="map-tooltip">
+                                <h4>Wakad</h4>
+                                <p>Growing suburban area</p>
+                                <div class="tooltip-stats">
+                                    <span><i class="fas fa-users"></i> 110+ patients</span>
+                                    <span><i class="fas fa-star"></i> 4.5/5 rating</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="map-pin premium pin-hinjewadi" data-area="Hinjewadi" data-type="premium" onclick="showAdvancedAreaInfo('Hinjewadi', 'premium')">
+                            <div class="pin-pulse"></div>
+                            <div class="pin-icon"><i class="fas fa-microchip"></i></div>
+                            <div class="map-tooltip">
+                                <h4>Hinjewadi</h4>
+                                <p>Major IT park location</p>
+                                <div class="tooltip-stats">
+                                    <span><i class="fas fa-users"></i> 220+ patients</span>
+                                    <span><i class="fas fa-star"></i> 4.9/5 rating</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="map-pin premium pin-aundh" data-area="Aundh" data-type="premium" onclick="showAdvancedAreaInfo('Aundh', 'premium')">
+                            <div class="pin-pulse"></div>
+                            <div class="pin-icon"><i class="fas fa-university"></i></div>
+                            <div class="map-tooltip">
+                                <h4>Aundh</h4>
+                                <p>Upscale residential area</p>
+                                <div class="tooltip-stats">
+                                    <span><i class="fas fa-users"></i> 160+ patients</span>
+                                    <span><i class="fas fa-star"></i> 4.8/5 rating</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="map-pin available pin-shivaji" data-area="Shivaji Nagar" data-type="available" onclick="showAdvancedAreaInfo('Shivaji Nagar', 'available')">
+                            <div class="pin-pulse"></div>
+                            <div class="pin-icon"><i class="fas fa-landmark"></i></div>
+                            <div class="map-tooltip">
+                                <h4>Shivaji Nagar</h4>
+                                <p>Central Pune location</p>
+                                <div class="tooltip-stats">
+                                    <span><i class="fas fa-users"></i> 140+ patients</span>
+                                    <span><i class="fas fa-star"></i> 4.6/5 rating</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="map-pin available pin-camp" data-area="Camp Area" data-type="available" onclick="showAdvancedAreaInfo('Camp Area', 'available')">
+                            <div class="pin-pulse"></div>
+                            <div class="pin-icon"><i class="fas fa-monument"></i></div>
+                            <div class="map-tooltip">
+                                <h4>Camp Area</h4>
+                                <p>Historic city center</p>
+                                <div class="tooltip-stats">
+                                    <span><i class="fas fa-users"></i> 130+ patients</span>
+                                    <span><i class="fas fa-star"></i> 4.5/5 rating</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Coverage Radius Indicator -->
+                        <div class="coverage-radius"></div>
+                    </div>
+
+                    <div class="map-info-panel">
+                        <div class="info-panel-header">
+                            <h4>Area Information</h4>
+                            <button class="close-panel" onclick="closeInfoPanel()">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="info-panel-content" id="infoPanelContent">
+                            <p>Click on any area pin to see detailed information</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="area-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Service Areas</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">1500+</span>
+                            <span class="stat-label">Patients Served</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">30min</span>
+                            <span class="stat-label">Avg Response Time</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">4.8/5</span>
+                            <span class="stat-label">Avg Rating</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2 class="section-title">Patient Success Stories</h2>
+            <p class="section-description">Real experiences from patients who found healing at home</p>
+            
+            <!-- Testimonials Grid -->
+            <div class="testimonials-grid">
+                <div class="testimonial-hover-card">
+                    <div class="testimonial-front">
+                        <div class="patient-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4>Rajesh Kumar</h4>
+                        <p>Back Pain Recovery</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-back">
+                        <blockquote>"Dr. Dipan's treatment completely transformed my life. Pain-free after 2 years of suffering!"</blockquote>
+                        <div class="recovery-stat">95% Pain Reduction</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-hover-card">
+                    <div class="testimonial-front">
+                        <div class="patient-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4>Anita Desai</h4>
+                        <p>Post-Surgery Rehab</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-back">
+                        <blockquote>"After knee replacement, Dr. Dipan's care made recovery so much easier. Walking confidently again!"</blockquote>
+                        <div class="recovery-stat">100% Mobility Restored</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-hover-card">
+                    <div class="testimonial-front">
+                        <div class="patient-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4>Mohan Patil</h4>
+                        <p>Geriatric Care</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-back">
+                        <blockquote>"Perfect for elderly patients. Dr. Dipan's gentle approach improved my balance significantly."</blockquote>
+                        <div class="recovery-stat">80% Balance Improved</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-hover-card">
+                    <div class="testimonial-front">
+                        <div class="patient-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4>Priya Sharma</h4>
+                        <p>Sports Injury</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-back">
+                        <blockquote>"Tennis elbow recovery was faster than expected. Back to playing within 6 weeks!"</blockquote>
+                        <div class="recovery-stat">90% Strength Restored</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-hover-card">
+                    <div class="testimonial-front">
+                        <div class="patient-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4>Amit Joshi</h4>
+                        <p>Neck Pain Relief</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-back">
+                        <blockquote>"Chronic neck pain from desk job completely resolved. Professional and caring service!"</blockquote>
+                        <div class="recovery-stat">100% Pain Relief</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-hover-card">
+                    <div class="testimonial-front">
+                        <div class="patient-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4>Sunita Rao</h4>
+                        <p>Arthritis Management</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-back">
+                        <blockquote>"Joint stiffness reduced dramatically. Can now do daily activities without pain!"</blockquote>
+                        <div class="recovery-stat">85% Mobility Improved</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-hover-card">
+                    <div class="testimonial-front">
+                        <div class="patient-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4>Vikram Singh</h4>
+                        <p>Shoulder Recovery</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-back">
+                        <blockquote>"Frozen shoulder treatment was excellent. Range of motion completely restored!"</blockquote>
+                        <div class="recovery-stat">95% Range Restored</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-hover-card">
+                    <div class="testimonial-front">
+                        <div class="patient-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4>Meera Patel</h4>
+                        <p>Post-Pregnancy Care</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-back">
+                        <blockquote>"Postpartum recovery support was amazing. Core strength and posture completely improved!"</blockquote>
+                        <div class="recovery-stat">90% Core Strength</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-hover-card">
+                    <div class="testimonial-front">
+                        <div class="patient-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4>Ravi Gupta</h4>
+                        <p>Stroke Recovery</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-back">
+                        <blockquote>"Neurological rehabilitation helped me regain independence. Grateful for the expert care!"</blockquote>
+                        <div class="recovery-stat">75% Function Restored</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-hover-card">
+                    <div class="testimonial-front">
+                        <div class="patient-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4>Kavita Mehta</h4>
+                        <p>Knee Pain Relief</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-back">
+                        <blockquote>"Knee osteoarthritis pain reduced significantly. Can climb stairs without difficulty now!"</blockquote>
+                        <div class="recovery-stat">88% Pain Reduction</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-hover-card">
+                    <div class="testimonial-front">
+                        <div class="patient-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4>Deepak Agarwal</h4>
+                        <p>Sciatica Treatment</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-back">
+                        <blockquote>"Severe sciatica pain completely resolved. Professional treatment with excellent results!"</blockquote>
+                        <div class="recovery-stat">92% Pain Relief</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-hover-card">
+                    <div class="testimonial-front">
+                        <div class="patient-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4>Neha Kapoor</h4>
+                        <p>Migraine Relief</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-back">
+                        <blockquote>"Cervical physiotherapy reduced my migraine frequency dramatically. Life-changing treatment!"</blockquote>
+                        <div class="recovery-stat">80% Frequency Reduced</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="doctor-name-highlight">Dr. Dipan Chowdhury</div>
+            <p class="section-description">Your trusted physiotherapy expert in Pune</p>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                            </div>
+                            <div class="form-group">
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select Subject</option>
+                                    <option value="appointment">Book Appointment</option>
+                                    <option value="inquiry">General Inquiry</option>
+                                    <option value="emergency">Emergency</option>
+                                    <option value="feedback">Feedback</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-actions-contact">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                            <button type="button" class="btn btn-success" onclick="sendToWhatsApp()">
+                                <i class="fab fa-whatsapp"></i> Send to WhatsApp
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="contact-info-section">
+                    <div class="contact-info">
+                        <img src="doctor-dipan.jpg" alt="Dr. Dipan Chowdhury" class="doctor-contact-photo">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>dipanchowdhury50@gmail.com</p>
+                                <button class="btn btn-sm" onclick="window.location.href='mailto:dipanchowdhury50@gmail.com'">Send Email</button>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>9547784509</p>
+                                <button class="btn btn-sm" onclick="window.location.href='tel:9547784509'">Call Now</button>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Service Area</strong>
+                                <p>All areas in Pune, Maharashtra</p>
+                                <button class="btn btn-sm" onclick="showServiceAreas()">View Areas</button>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Working Hours</strong>
+                                <p>Mon-Sat: 8:00 AM - 8:00 PM<br>Sun: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-actions">
+                        <h3>Quick Actions</h3>
+                        <div class="action-buttons">
+                            <button class="action-btn whatsapp" onclick="openWhatsApp()">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp Chat</span>
+                            </button>
+                            <button class="action-btn emergency" onclick="callEmergency()">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>Emergency Call</span>
+                            </button>
+                            <button class="action-btn booking" onclick="showSection('booking')">
+                                <i class="fas fa-calendar-plus"></i>
+                                <span>Book Appointment</span>
+                            </button>
+                            <button class="action-btn assessment" onclick="startAssessment()">
+                                <i class="fas fa-clipboard-check"></i>
+                                <span>Health Assessment</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="section">
+        <div class="container">
+            <h2 class="section-title">Book an Appointment</h2>
+            <p class="section-description">Schedule your home physiotherapy session today</p>
+            
+            <div class="booking-form">
+    <form id="bookingForm">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="patientName">Patient Name</label>
+                <input type="text" id="patientName" name="patientName" placeholder="Enter patient's full name" required>
+            </div>
+            <div class="form-group">
+                <label for="patientAge">Patient Age</label>
+                <input type="number" id="patientAge" name="patientAge" placeholder="Enter age in years" min="1" max="120" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="contactNumber">Contact Number</label>
+                <input type="tel" id="contactNumber" name="contactNumber" placeholder="Enter 10-digit mobile number" pattern="[0-9]{10}" required>
+            </div>
+            <div class="form-group">
+                <label for="appointmentDate">Appointment Date</label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="appointmentTime">Preferred Time Slot</label>
+                <select id="appointmentTime" name="appointmentTime" required>
+                    <option value="">🕘 Select Your Preferred Time</option>
+                    <optgroup label="🌅 Morning Sessions">
+                        <option value="8:00 AM">8:00 AM - Early Morning</option>
+                        <option value="9:00 AM">9:00 AM - Morning</option>
+                        <option value="10:00 AM">10:00 AM - Mid Morning</option>
+                        <option value="11:00 AM">11:00 AM - Late Morning</option>
+                    </optgroup>
+                    <optgroup label="🌞 Afternoon Sessions">
+                        <option value="12:00 PM">12:00 PM - Noon</option>
+                        <option value="1:00 PM">1:00 PM - Early Afternoon</option>
+                        <option value="2:00 PM">2:00 PM - Afternoon</option>
+                        <option value="3:00 PM">3:00 PM - Mid Afternoon</option>
+                        <option value="4:00 PM">4:00 PM - Late Afternoon</option>
+                    </optgroup>
+                    <optgroup label="🌆 Evening Sessions">
+                        <option value="5:00 PM">5:00 PM - Early Evening</option>
+                        <option value="6:00 PM">6:00 PM - Evening</option>
+                        <option value="7:00 PM">7:00 PM - Late Evening</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="serviceType">Treatment Service</label>
+                <select id="serviceType" name="serviceType" required>
+                    <option value="">🏥 Choose Your Treatment</option>
+                    <optgroup label="💪 Pain Management">
+                        <option value="Back Pain Therapy">🦴 Back Pain Therapy - Specialized spinal care</option>
+                        <option value="Neck Pain Relief">🦴 Neck Pain Relief - Cervical treatment</option>
+                        <option value="Joint Pain Treatment">🦴 Joint Pain Treatment - Arthritis & mobility</option>
+                        <option value="Sciatica Treatment">🦴 Sciatica Treatment - Nerve pain relief</option>
+                    </optgroup>
+                    <optgroup label="🏃‍♂️ Rehabilitation Services">
+                        <option value="Neurological Rehab">🧠 Neurological Rehab - Stroke & nerve recovery</option>
+                        <option value="Orthopedic Care">🦴 Orthopedic Care - Bone & muscle therapy</option>
+                        <option value="Sports Rehabilitation">⚽ Sports Rehabilitation - Athletic recovery</option>
+                        <option value="Post-Surgery Rehab">🏥 Post-Surgery Rehab - Recovery support</option>
+                    </optgroup>
+                    <optgroup label="👨‍⚕️ Specialty Care">
+                        <option value="Pediatric Physio">👶 Pediatric Physiotherapy - Child care</option>
+                        <option value="Geriatric Care">👴 Geriatric Care - Elderly specialized</option>
+                        <option value="Respiratory Therapy">🫁 Respiratory Therapy - Breathing exercises</option>
+                        <option value="Women's Health">👩 Women's Health - Pre/post natal care</option>
+                    </optgroup>
+                    <optgroup label="📦 Treatment Packages">
+                        <option value="Weekly Package">📅 Weekly Package - 6 Sessions (₹4,499)</option>
+                        <option value="Monthly Package">📅 Monthly Package - 26 Sessions (₹19,999)</option>
+                        <option value="Intensive Package">📅 Intensive Package - 12 Sessions (₹8,999)</option>
+                        <option value="Assessment Only">📋 Initial Assessment - Consultation (₹500)</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="patientAddress">Complete Address</label>
+            <textarea id="patientAddress" name="patientAddress" rows="3" placeholder="Enter your complete address with landmark, area, and pincode for accurate service delivery" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="additionalNotes">Medical History & Special Requirements</label>
+            <textarea id="additionalNotes" name="additionalNotes" rows="3" placeholder="Please mention any medical conditions, previous treatments, specific requirements, or questions you have"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-large">
+            <i class="fas fa-calendar-check"></i> Book My Appointment
+        </button>
+    </form>
+</div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-description">Find answers to common questions about our services</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What is home physiotherapy?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Home physiotherapy brings professional physiotherapy services to the comfort of your home. Our certified physiotherapists provide personalized treatment plans tailored to your specific needs, ensuring effective rehabilitation without the need to travel to a clinic.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What conditions do you treat?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We treat a wide range of conditions including back pain, neck pain, joint pain, sports injuries, post-surgery rehabilitation, neurological conditions, pediatric physiotherapy, respiratory issues, and geriatric care. Our comprehensive services cater to patients of all ages and conditions.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Are your physiotherapists certified?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all our physiotherapists are certified professionals with specialized training and years of experience in various physiotherapy specializations. They undergo continuous professional development to stay updated with the latest treatment techniques and best practices.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What areas in Pune do you cover?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide home physiotherapy services across all major areas in Pune including Koregaon Park, Viman Nagar, Kharadi, Hadapsar, Baner, Wakad, Hinjewadi, Aundh, Shivaji Nagar, Camp Area, and surrounding localities. Contact us to confirm service availability in your specific area.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How do I book an appointment?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can book an appointment by filling out the booking form on our website, calling us directly, or sending us a message via WhatsApp. Our team will assist you in scheduling a convenient time and date for your home physiotherapy session.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What should I expect during a home physiotherapy session?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>During a home physiotherapy session, our physiotherapist will conduct a thorough assessment of your condition, discuss your treatment goals, and develop a personalized treatment plan. The session may include manual therapy, exercise prescription, pain management techniques, and education on self-care strategies.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What are your safety protocols for home visits?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We adhere to strict safety protocols for all home visits. Our physiotherapists wear masks, use hand sanitizers, and follow hygiene guidelines to ensure a safe and comfortable environment for our patients. We also conduct regular health checks for our staff to prevent any potential risks.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What equipment do you bring for a home session?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our physiotherapists bring all necessary equipment for a comprehensive physiotherapy session, including exercise bands, weights, massage tools, and other therapeutic devices. We ensure that all equipment is clean and well-maintained for optimal treatment outcomes.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What if I need to cancel or reschedule my appointment?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>If you need to cancel or reschedule your appointment, please notify us at least 24 hours in advance. We will do our best to accommodate your request and find an alternative time that works for you. Late cancellations may be subject to a cancellation fee.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-container">
+                            <img src="assets/logo.png" alt="PhysioDoor Logo" class="footer-logo-img">
+                            <span class="logo-text">PhysioDoor</span>
+                        </div>
+                    </div>
+                    <p>Professional physiotherapy services at your doorstep. Expert care, personalized treatment, and convenient home visits across Pune.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Back Pain Therapy</a></li>
+                        <li><a href="#services">Neurological Rehab</a></li>
+                        <li><a href="#services">Orthopedic Care</a></li>
+                        <li><a href="#services">Sports Rehabilitation</a></li>
+                        <li><a href="#services">Post-Surgery Rehab</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> 9547784509</p>
+                        <p><i class="fas fa-envelope"></i> dipanchowdhury50@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra</p>
+                    </div>
+                    <div class="footer-emergency">
+                        <button class="btn btn-danger btn-sm" onclick="callEmergency()">
+                            <i class="fas fa-phone-alt"></i> Emergency Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 PhysioDoor. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#" onclick="showTerms()">Terms & Conditions</a>
+                        <a href="#" onclick="showPrivacy()">Privacy Policy</a>
+                        <a href="#" onclick="showRefund()">Refund Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</body>
+</html>
